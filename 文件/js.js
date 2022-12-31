@@ -1,5 +1,4 @@
 console.log("nia！竟然被发现了～");
-warma();
 
 function scary(){
 	if (document.getElementById("button1").innerHTML == "单击开启") {
