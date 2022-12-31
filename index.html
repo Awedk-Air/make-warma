@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> 一起来捏沃～ </title>
+		<link href="./Files/style.css" rel="stylesheet" type="text/css" />
+		<script src="./Files/vue.min.js"></script>
+		<script src="./Files/js.js"></script>
+		<link rel="shortcut icon" href="./Files/warma.ico">
+	</head>
+	<body>
+		<h1 id="title">捏沃游戏</h1>
+		<h4>创造属于你自己的沃玛～(可截图保存)</h4>
+		<div id="warma_">
+			<div id="a">
+				<h1 id="Warma" class="float">Warma</h1>
+
+				<img src="./imgs/身体.png" id="body" />
+				
+				<div id="h" class="float">
+					<img src="./imgs/脸红.png" id="face" />
+				</div>
+
+				<div id="e" class="float">
+					<img src="./imgs/眼睛1.png" id="eyes1" />
+				</div>
+				<div id="e" class="float">
+					<img src="./imgs/眼睛2.png" id="eyes2" />
+				</div>
+				<div id="e" class="float">
+					<img src="./imgs/眼睛3.png" id="eyes3" />
+				</div>
+				<div id="e" class="float">
+					<img src="./imgs/眼睛4.png" id="eyes" />
+				</div>
+				<div id="e" class="float">
+					<img src="./imgs/眼睛5.png" id="eyes5" />
+				</div>
+				<div id="e" class="float">
+					<img src="./imgs/眼睛6.png" id="eyes6" />
+				</div>
+				<div id="e" class="float">
+					<img src="./imgs/眼睛7.png" id="eyes7" />
+				</div>
+				<div id="e" class="float">
+					<img src="./imgs/眼睛8.png" id="eyes8" />
+				</div>
+				<div id="e" class="float">
+					<img src="./imgs/眼睛9.png" id="eyes9" />
+				</div>
+
+				<div id="f" class="float">
+					<img src="./imgs/嘴巴1.png" id="mouth1" />
+				</div>
+				<div id="f" class="float">
+					<img src="./imgs/嘴巴2.png" id="mouth2" />
+				</div>
+				<div id="f" class="float">
+					<img src="./imgs/嘴巴3.png" id="mouth3" />
+				</div>
+				<div id="f" class="float">
+					<img src="./imgs/嘴巴4.png" id="mouth4" />
+				</div>
+				<div id="f" class="float">
+					<img src="./imgs/嘴巴5.png" id="mouth" />
+				</div>
+				<div id="f" class="float">
+					<img src="./imgs/嘴巴6.png" id="mouth6" />
+				</div>
+				<div id="f" class="float">
+					<img src="./imgs/嘴巴7.png" id="mouth7" />
+				</div>
+				<div id="f" class="float">
+					<img src="./imgs/嘴巴8.png" id="mouth8" />
+				</div>
+				<div id="f" class="float">
+					<img src="./imgs/嘴巴9.png" id="mouth9" />
+				</div>
+				<div id="f" class="float">
+					<img src="./imgs/嘴巴10.png" id="mouth10" />
+				</div>
+				<div id="f" class="float">
+					<img src="./imgs/嘴巴11.png" id="mouth11" />
+				</div>
+
+				<div id="b" class="float">
+					<img src="./imgs/害怕2.png" id="scary" />
+				</div>
+
+				<div id="c" class="float">
+					<img src="./imgs/头发.png" id="hair" />
+				</div>
+
+				<div id="g" class="float">
+					<img src="./imgs/流汗.png" id="han" />
+				</div>
+
+				<div id="d" class="float">
+					<img src="./imgs/帽子1.png" id="hat1" />
+				</div>
+				<div id="d" class="float">
+					<img src="./imgs/帽子2.png" id="hat" />
+				</div>
+			</div>
+		</div>
+		<h2>设置</h2>
+		<div class = "block">
+			<div class="text">沃玛害怕</div>
+			<button id="button1" onclick="scary();">单击开启</button>
+			<br class="m" />
+			<div class="text">沃玛流汗</div>
+			<button id="button2" onclick="han();">单击开启</button>
+			<br class="m" />
+			<div class="text">沃玛脸红</div>
+			<button id="button3" onclick="face();">单击开启</button>
+			<br class="m" />
+			<div class="text">沃玛名字</div>
+			<button id="button4" onclick="name_();">单击关闭</button>
+			<br class="m" />
+			<div class="text" id="n">眼睛样式</div>
+			<br class="m" />
+			<button onclick="eye('eyes1');">样式1</button>
+			<button onclick="eye('eyes2');">样式2</button>
+			<button onclick="eye('eyes3');">样式3</button>
+			<button onclick="eye('eyes');">样式4</button>
+			<button onclick="eye('eyes5');">样式5</button>
+			<button onclick="eye('eyes6');">样式6</button>
+			<button onclick="eye('eyes7');">样式7</button>
+			<button onclick="eye('eyes8');">样式8</button>
+			<button onclick="eye('eyes9');">样式9</button>
+			<br class="m" />
+			<div class="text" id="n">嘴巴样式</div>
+			<br class="m" />
+			<button onclick="mouth('mouth1');">样式1</button>
+			<button onclick="mouth('mouth2');">样式2</button>
+			<button onclick="mouth('mouth3');">样式3</button>
+			<button onclick="mouth('mouth4');">样式4</button>
+			<button onclick="mouth('mouth');">样式5</button>
+			<button onclick="mouth('mouth6');">样式6</button>
+			<button onclick="mouth('mouth7');">样式7</button>
+			<button onclick="mouth('mouth8');">样式8</button>
+			<button onclick="mouth('mouth9');">样式9</button>
+			<button onclick="mouth('mouth10');">样式10</button>
+			<button onclick="mouth('mouth11');">样式11</button>
+			<br class="m" />
+			<div class="text" id="n">帽子样式</div>
+			<br class="m" />
+			<button onclick="hat('hat1');">样式1</button>
+			<button onclick="hat('hat');">样式2</button>
+			<button onclick="hat('');">关闭</button>
+			<p style="line-height:20px;font-size:15px;color:RGB(200, 0, 0);">所有素材均为B站用户<a title="点我跳转" style="text-decoration:none;box-shadow:none;text-shadow: 0px 5px 10px #f00" href="https://space.bilibili.com/1922236690"><strong>Awedk_Air_</strong></a>绘制，当然这个网页也是我做的（嘻嘻），可以随便用～切记：不可商用！<br /><br /><a title="点我跳转" style="text-decoration:none;box-shadow:none;text-shadow: 0px 5px 10px #f00" href="https://space.bilibili.com/53456"><strong>谢谢@Warma给大家带来欢乐～</strong></a></p>
+		</div>
+		<br /><br /><p style="line-height:20px;font-size:10px;color:RGB(200, 0, 0);text-align:center;">捏沃游戏 版本 1.1.1</p>
+	</body>
+</html>
