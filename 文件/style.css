@@ -37,7 +37,7 @@ h4 {
 	margin-bottom: 20px;
 	color: #d00;
 }
-a {
+.sa {
 	color: RGB(200, 0, 0);
 	text-decoration: none;
 	box-shadow: 0px -3px 10px #d00;
@@ -52,7 +52,7 @@ a {
 	height: 380px;
 	margin: 0 auto;
 	box-shadow: 0px 10px 20px RGB(150, 0, 0);
-	background-color: RGB(142, 122, 128)
+	background-color: RGB(142, 122, 128);
 }
 #body {
 	width: 372px;
@@ -211,10 +211,9 @@ a {
 }
 
 
-button {
+.bas {
 	background-color: RGB(200, 0, 0);
 	color: white;
-	border: 0px;
 	height: 30px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -223,13 +222,13 @@ button {
 	box-shadow: 0px 5px 10px #f55;
 	cursor: pointer;
 }
-button:hover {
+.bas:hover {
 	box-shadow: 0px 3px 10px #f00;
 }
 
 .text {
 	display: inline;
-	margin-right: 370px;
+	margin-right: 290px;
 	text-shadow: 0px 3px 10px #f33;
 }
 #n {
@@ -241,16 +240,35 @@ button:hover {
 	line-height: 45px;
 	border: 3px solid RGB(255, 200, 200);
 	border-radius: 30px;
-	width: 550px;
-	height: 650px;
+	width: 460px;
+	height: 430px;
 	margin: 0 auto;
 	padding: 10px 20px 0px 20px;
 	box-shadow: 0px 10px 20px #f99;
 	margin-bottom: 50px;
 	background-color: RGB(255, 250, 250);
-	margin-top: -10px;
+	margin-top: 30px;
 }
 body {
 	background-color: RGB(255, 225, 225);
 	background-image: url("../图像/背景.png");
+}
+
+select {
+    height: 32px;
+    width: 75px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 3px solid #fdd;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 5px 10px #faa;
+    box-shadow: 0 5px 10px #faa;
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+   	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	text-align: center;
+	cursor: pointer;
 }
