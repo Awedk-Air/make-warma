@@ -64,3 +64,21 @@ function name_(){
 	}
 }
 
+function awa(){
+	var myselect=document.getElementById("awa");
+	var index=myselect.selectedIndex;
+	hat(myselect.options[index].value);
+}
+
+function qaq(){
+	var myselect=document.getElementById("qaq");
+	var index=myselect.selectedIndex;
+	eye(myselect.options[index].value);
+}
+
+function qwq(){
+	var myselect=document.getElementById("qwq");
+	var index=myselect.selectedIndex;
+	mouth(myselect.options[index].value);
+}
+
