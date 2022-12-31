@@ -103,53 +103,55 @@
 				</div>
 			</div>
 		</div>
-		<h2>设置</h2>
 		<div class = "block">
 			<div class="text">沃玛害怕</div>
-			<button id="button1" onclick="scary();">单击开启</button>
+			<button class="bas" id="button1" onclick="scary();">单击开启</button>
 			<br class="m" />
 			<div class="text">沃玛流汗</div>
-			<button id="button2" onclick="han();">单击开启</button>
+			<button class="bas" id="button2" onclick="han();">单击开启</button>
 			<br class="m" />
 			<div class="text">沃玛脸红</div>
-			<button id="button3" onclick="face();">单击开启</button>
+			<button class="bas" id="button3" onclick="face();">单击开启</button>
 			<br class="m" />
 			<div class="text">沃玛名字</div>
-			<button id="button4" onclick="name_();">单击关闭</button>
+			<button class="bas" id="button4" onclick="name_();">单击关闭</button>
 			<br class="m" />
-			<div class="text" id="n">眼睛样式</div>
+			<div class="text"><label for="qaq">眼睛样式</label></div>
+			<select id="qaq" onchange="qaq()">
+				<option value="eyes1">正常</option>
+				<option value="eyes2">眼镜</option>
+				<option value="eyes3">害怕</option>
+				<option value="eyes">微笑</option>
+				<option value="eyes5">看</option>
+				<option value="eyes6">生气</option>
+				<option value="eyes7">皱眉</option>
+				<option value="eyes8">闭眼</option>
+				<option value="eyes9">疑惑</option>
+			</select>
 			<br class="m" />
-			<button onclick="eye('eyes1');">样式1</button>
-			<button onclick="eye('eyes2');">样式2</button>
-			<button onclick="eye('eyes3');">样式3</button>
-			<button onclick="eye('eyes');">样式4</button>
-			<button onclick="eye('eyes5');">样式5</button>
-			<button onclick="eye('eyes6');">样式6</button>
-			<button onclick="eye('eyes7');">样式7</button>
-			<button onclick="eye('eyes8');">样式8</button>
-			<button onclick="eye('eyes9');">样式9</button>
+			<div class="text"><label for="qwq">嘴巴样式</label></div>
+			<select onchange="qwq()" id="qwq">
+				<option value="mouth4">平静</option>
+				<option value="mouth2">嘴角撇起</option>
+				<option value="mouth3">嘴巴微张</option>
+				<option value="mouth1">开心</option>
+				<option value="mouth">微笑</option>
+				<option value="mouth6">O形嘴</option>
+				<option value="mouth7">惊讶</option>
+				<option value="mouth8">吞</option>
+				<option value="mouth9">开心2</option>
+				<option value="mouth10">开心3</option>
+				<option value="mouth11">舔嘴</option>
+			</select>
 			<br class="m" />
-			<div class="text" id="n">嘴巴样式</div>
-			<br class="m" />
-			<button onclick="mouth('mouth1');">样式1</button>
-			<button onclick="mouth('mouth2');">样式2</button>
-			<button onclick="mouth('mouth3');">样式3</button>
-			<button onclick="mouth('mouth4');">样式4</button>
-			<button onclick="mouth('mouth');">样式5</button>
-			<button onclick="mouth('mouth6');">样式6</button>
-			<button onclick="mouth('mouth7');">样式7</button>
-			<button onclick="mouth('mouth8');">样式8</button>
-			<button onclick="mouth('mouth9');">样式9</button>
-			<button onclick="mouth('mouth10');">样式10</button>
-			<button onclick="mouth('mouth11');">样式11</button>
-			<br class="m" />
-			<div class="text" id="n">帽子样式</div>
-			<br class="m" />
-			<button onclick="hat('hat1');">样式1</button>
-			<button onclick="hat('hat');">样式2</button>
-			<button onclick="hat('');">关闭</button>
-			<p style="line-height:20px;font-size:15px;color:RGB(200, 0, 0);">所有素材均为B站用户<a title="点我跳转" style="text-decoration:none;box-shadow:none;text-shadow: 0px 5px 10px #f00" href="https://space.bilibili.com/1922236690"><strong>Awedk_Air_</strong></a>绘制，当然这个网页也是我做的（嘻嘻），可以随便用～切记：不可商用！<br /><br /><a title="点我跳转" style="text-decoration:none;box-shadow:none;text-shadow: 0px 5px 10px #f00" href="https://space.bilibili.com/53456"><strong>谢谢@Warma给大家带来欢乐～</strong></a></p>
+			<div class="text"><label for="awa">帽子样式</label></div>
+			<select id="awa" onchange="awa()">
+				<option value="">关闭</option>
+				<option value='hat1'>样式1</option>
+				<option value='hat'>样式2</option>
+			</select>
+			<p style="line-height:20px;font-size:15px;color:RGB(200, 0, 0);">所有素材均为B站用户<a title="点我跳转" class="sa" style="text-decoration:none;box-shadow:none;text-shadow: 0px 5px 10px #f00" href="https://space.bilibili.com/1922236690"><strong>Awedk_Air_</strong></a>绘制，当然这个网页也是我做的（嘻嘻），可以随便用～切记：不可商用！<br /><br /><a class="sa" title="点我跳转" style="text-decoration:none;box-shadow:none;text-shadow: 0px 5px 10px #f00" href="https://space.bilibili.com/53456"><strong>谢谢@Warma给大家带来欢乐～</strong></a></p>
 		</div>
-		<br /><br /><p style="line-height:20px;font-size:10px;color:RGB(200, 0, 0);text-align:center;">捏沃游戏 版本 1.1.1</p>
+		<br /><br /><p style="line-height:20px;font-size:10px;color:RGB(200, 0, 0);text-align:center;">捏沃游戏 版本 1.1.2</p>
 	</body>
 </html>
